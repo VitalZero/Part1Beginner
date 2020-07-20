@@ -78,8 +78,8 @@ ATOM RegisterWC(const wchar_t* className)
 
   wc.lpfnWndProc = WindowProc;
   wc.hInstance = GetModuleHandle(nullptr);
-  wc.hIcon = LoadIcon(GetModuleHandle(nullptr), IDI_APPLICATION);
-  wc.hCursor = LoadCursor(GetModuleHandle(nullptr), IDC_ARROW);
+  wc.hIcon = LoadIcon(nullptr, IDI_APPLICATION);
+  wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
   wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
   wc.lpszClassName = className;
 
